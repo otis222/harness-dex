@@ -1,0 +1,40 @@
+{
+  "repo": "lexmount/moli",
+  "url": "https://github.com/lexmount/moli",
+  "checked_at": "2026-11-06",
+  "stars": 22744,
+  "forks": 632,
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "created_at": "2026-08-10",
+  "pushed_at": "2026-11-06",
+  "archived": false,
+  "homepage": "https://browser.lexmount.com",
+  "topics": [
+    "ai-agents",
+    "ai-tools",
+    "browser",
+    "browser-automation",
+    "cloud-browser",
+    "headless",
+    "headless-browser",
+    "kitesurf",
+    "playwright",
+    "puppeteer",
+    "rust",
+    "servo",
+    "web-crawler",
+    "web-crawling",
+    "web-scraper",
+    "web-scraping"
+  ],
+  "root_files": {
+    "AGENTS.md": true,
+    "CLAUDE.md": false,
+    "SKILL.md": false
+  },
+  "sources": {
+    "repo": "GitHub search API",
+    "root_files": "git ls-tree"
+  }
+}

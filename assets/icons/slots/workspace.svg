@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <mask id="m-workspace" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect x="11" y="10" width="42" height="31" rx="3" fill="#fff"/>
+      <rect x="15" y="14" width="34" height="23" rx="1" fill="#000"/>
+      <path d="M20 21l5 4-5 4" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="28" y="28" width="9" height="2.8" rx="1.4" fill="#fff"/>
+      <path d="M5 45h54l-3 7a2 2 0 0 1-2 1.5H10A2 2 0 0 1 8 52z" fill="#fff"/>
+      <rect x="27" y="45" width="10" height="2" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="64" height="64" fill="currentColor" mask="url(#m-workspace)"/>
+</svg>

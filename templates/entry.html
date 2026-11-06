@@ -1,0 +1,50 @@
+<article class="entry">
+  <nav class="crumbs" aria-label="目前位置">
+    <a href="{{root}}#manifest">裝備清單</a>
+    <span aria-hidden="true">／</span>
+    <a href="{{root}}#slot-{{slot}}">{{slot_name}}</a>
+  </nav>
+
+  <header class="entry-head">
+    <div class="plate" aria-hidden="true">
+      <svg class="silhouette" viewBox="0 0 64 64"><use href="#icon-{{slot}}"></use></svg>
+      <span class="tape">{{slot_name}}</span>
+    </div>
+    <div class="entry-title">
+      <h1>{{name}}</h1>
+      {{motto_html}}
+      <p class="lede">{{summary}}</p>
+      <p class="entry-links">{{links}}</p>
+    </div>
+  </header>
+
+  <section class="spec" aria-label="規格">
+    <dl class="spec-grid">
+      <div class="spec-stars">
+        <dt>星數</dt>
+        <dd><span class="big">{{stars}}</span><span class="gauge" title="對數刻度：1 千～30 萬"><span style="width:{{gauge}}%"></span></span></dd>
+      </div>
+      <div><dt>Fork</dt><dd>{{forks}}</dd></div>
+      <div><dt>主要語言</dt><dd>{{language}}</dd></div>
+      <div><dt>授權</dt><dd>{{license}}</dd></div>
+      <div><dt>建立日期</dt><dd>{{created}}</dd></div>
+      <div><dt>最近更新</dt><dd>{{pushed}}</dd></div>
+      <div><dt>上手難度</dt><dd>{{difficulty_html}}</dd></div>
+      <div><dt>規則檔</dt><dd>{{rule_marks}}</dd></div>
+    </dl>
+    <p class="spec-note">數字來自 {{checked_at}} 的 GitHub 快照。標籤：{{tags}}</p>
+  </section>
+
+  <div class="entry-layout">
+    <nav class="toc" aria-label="本頁段落">
+      <ol>{{toc}}</ol>
+    </nav>
+    <div class="entry-body">
+      {{sections}}
+    </div>
+  </div>
+
+  <nav class="pager" aria-label="上一件、下一件">
+    {{pager}}
+  </nav>
+</article>

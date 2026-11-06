@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harness 圖鑑｜AI Agent 的裝備庫</title>
+<meta name="description" content="收錄 GitHub 上正熱門的 AI Agent 開源專案，照「AI Agent ＝ Model ＋ Harness」分成 8 個裝備欄位，一個專案一頁說明書。">
+<link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700;800&family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="./assets/css/site.css">
+</head>
+<body class="page-home">
+<!-- 這個檔案由 tools/build.py 產生，請勿手改。內容改 notes/ 或 pages/，版型改 templates/，再執行 python tools/build.py -->
+<svg class="sprite" aria-hidden="true" focusable="false"><defs><mask id="m-brain" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><circle cx="22" cy="23" r="11"/><circle cx="32" cy="17" r="11"/><circle cx="42" cy="23" r="11"/><circle cx="18" cy="36" r="11"/><circle cx="46" cy="36" r="11"/><circle cx="26" cy="46" r="10"/><circle cx="38" cy="46" r="10"/><circle cx="32" cy="32" r="14"/></g><g fill="none" stroke="#000" stroke-width="2.6" stroke-linecap="round"><path d="M32 7c-2 7 2 12 0 19s2 13 0 20-1 7 0 10"/><path d="M13 25c4-3 8 2 12-1"/><path d="M11 38c4-3 9 2 14-1"/><path d="M19 49c3-3 6 1 9-2"/><path d="M21 13c3 3-1 6 3 9"/><path d="M51 25c-4-3-8 2-12-1"/><path d="M53 38c-4-3-9 2-14-1"/><path d="M45 49c-3-3-6 1-9-2"/><path d="M43 13c-3 3 1 6-3 9"/></g></mask><mask id="m-harness" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><path fill="#fff" d="M20 5h7l5 17 5-17h7l3 9c1 6 4 10 9 12v32a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V26c5-2 8-6 9-12z"/><g fill="#000"><rect x="31" y="22" width="2" height="40"/><rect x="6" y="37" width="52" height="4"/><rect x="6" y="47" width="52" height="4"/></g></mask><mask id="m-workspace" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect x="11" y="10" width="42" height="31" rx="3" fill="#fff"/><rect x="15" y="14" width="34" height="23" rx="1" fill="#000"/><path d="M20 21l5 4-5 4" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="28" y="28" width="9" height="2.8" rx="1.4" fill="#fff"/><path d="M5 45h54l-3 7a2 2 0 0 1-2 1.5H10A2 2 0 0 1 8 52z" fill="#fff"/><rect x="27" y="45" width="10" height="2" fill="#000"/></mask><mask id="m-tool" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g transform="rotate(-45 32 32)"><g fill="#fff"><rect x="12" y="28.5" width="40" height="7" rx="3.5"/><circle cx="11" cy="32" r="9.5"/><circle cx="53" cy="32" r="8"/></g><g fill="#000"><rect x="-1" y="28.2" width="13.5" height="7.6"/><circle cx="53" cy="32" r="4"/></g></g></mask><mask id="m-connector" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><rect x="23" y="6" width="5" height="16" rx="1.5"/><rect x="36" y="6" width="5" height="16" rx="1.5"/><rect x="16" y="19" width="32" height="23" rx="5"/><path d="M27 41h10v5a5 5 0 0 1-10 0z"/></g><path d="M32 49c0 8 10 6 18 11" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><rect x="21" y="27" width="22" height="3" rx="1.5" fill="#000"/></mask><mask id="m-skill" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><rect x="16" y="11" width="32" height="42"/><rect x="10" y="6" width="44" height="10" rx="5"/><rect x="10" y="48" width="44" height="10" rx="5"/></g><g fill="#000"><rect x="16" y="15.5" width="32" height="1.6"/><rect x="16" y="46.9" width="32" height="1.6"/><rect x="21" y="22" width="22" height="2.8" rx="1.4"/><rect x="21" y="28" width="17" height="2.8" rx="1.4"/><rect x="21" y="34" width="22" height="2.8" rx="1.4"/><rect x="21" y="40" width="12" height="2.8" rx="1.4"/></g></mask><mask id="m-rules" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect x="13" y="5" width="38" height="50" rx="3" fill="#fff"/><path d="M40 52v10l4-3.2 4 3.2V52z" fill="#fff"/><rect x="18" y="5" width="2.6" height="50" fill="#000"/><path d="M31 20l-3 21M39 20l-3 21M26 27h17M25 34h17" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/></mask><mask id="m-schedule" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><circle cx="14" cy="14" r="7"/><circle cx="50" cy="14" r="7"/><rect x="29" y="8" width="6" height="7" rx="1.5"/><circle cx="32" cy="35" r="21"/></g><circle cx="32" cy="35" r="16" fill="#000"/><g fill="none" stroke="#fff" stroke-linecap="round"><path d="M32 35V24M32 35l8 5" stroke-width="3.2"/><path d="M18 51l-5 8M46 51l5 8" stroke-width="4.5"/></g><circle cx="32" cy="35" r="2.6" fill="#fff"/></mask></defs><symbol id="icon-brain" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-brain)"/></symbol><symbol id="icon-harness" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-harness)"/></symbol><symbol id="icon-workspace" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-workspace)"/></symbol><symbol id="icon-tool" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-tool)"/></symbol><symbol id="icon-connector" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-connector)"/></symbol><symbol id="icon-skill" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-skill)"/></symbol><symbol id="icon-rules" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-rules)"/></symbol><symbol id="icon-schedule" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-schedule)"/></symbol></svg>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <a class="brand" href="./">
+    <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-harness"></use></svg>
+    <span>Harness 圖鑑</span>
+  </a>
+  <nav class="site-nav" aria-label="主要">
+    <a href="./#manifest">裝備清單</a>
+    <a href="./#rule-files">規則檔觀察</a>
+    <a href="./about/">這個網站怎麼長出來的</a>
+    <a class="ext" rel="noopener" href="https://github.com/otis222/harness-dex">GitHub</a>
+  </nav>
+</header>
+<main id="main">
+<section class="board-wrap" aria-labelledby="formula">
+  <div class="board">
+    <h1 class="formula" id="formula">
+      <span class="f-lead">AI Agent ＝</span>
+      <span class="f-model">Model</span>
+      <span class="f-plus">＋</span>
+      <span class="f-harness">Harness</span>
+    </h1>
+    <div class="zone zone--model">
+      <p class="zone-label" aria-hidden="true">Model</p>
+      <div class="slot slot--brain" data-slot="brain">
+  <a class="slot-link" href="#slot-brain" aria-label="大腦：1 件，在裝備清單裡篩選">
+    <svg class="silhouette" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-brain"></use></svg>
+    <span class="tape">大腦</span>
+  </a>
+  <ul class="hung"><li><a href="entries/magpie/">magpie</a></li></ul>
+</div>
+
+    </div>
+    <div class="zone zone--plus" aria-hidden="true">＋</div>
+    <div class="zone zone--harness">
+      <p class="zone-label" aria-hidden="true">Harness</p>
+      <div class="slot slot--harness" data-slot="harness">
+  <a class="slot-link" href="#slot-harness" aria-label="整套 Harness：1 件，在裝備清單裡篩選">
+    <svg class="silhouette" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-harness"></use></svg>
+    <span class="tape">整套 Harness</span>
+  </a>
+  <ul class="hung"><li><a href="entries/deepseek-harness/">DeepSeek Harness</a></li></ul>
+</div>
+<div class="slot slot--workspace" data-slot="workspace">
+  <a class="slot-link" href="#slot-workspace" aria-label="工作環境：1 件，在裝備清單裡篩選">
+    <svg class="silhouette" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-workspace"></use></svg>
+    <span class="tape">工作環境</span>
+  </a>
+  <ul class="hung"><li><a href="entries/openbot/">OpenBot</a></li></ul>
+</div>
+<div class="slot slot--tool" data-slot="tool">
+  <a class="slot-link" href="#slot-tool" aria-label="工具：2 件，在裝備清單裡篩選">
+    <svg class="silhouette" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-tool"></use></svg>
+    <span class="tape">工具</span>
+  </a>
+  <ul class="hung"><li><a href="entries/anydoc/">anydoc</a></li><li><a href="entries/moli/">Moli</a></li></ul>
+</div>
+<div class="slot slot--connector" data-slot="connector">
+  <a class="slot-link" href="#slot-connector" aria-label="連接器：1 件，在裝備清單裡篩選">
+    <svg class="silhouette" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-connector"></use></svg>
+    <span class="tape">連接器</span>
+  </a>
+  <ul class="hung"><li><a href="entries/github-mcp-server/">GitHub MCP Server</a></li></ul>
+</div>
+<div class="slot slot--skill" data-slot="skill">
+  <a class="slot-link" href="#slot-skill" aria-label="技能：1 件，在裝備清單裡篩選">
+    <svg class="silhouette" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-skill"></use></svg>
+    <span class="tape">技能</span>
+  </a>
+  <ul class="hung"><li><a href="entries/anatomy/">Anatomy</a></li></ul>
+</div>
+<div class="slot slot--rules" data-slot="rules">
+  <a class="slot-link" href="#slot-rules" aria-label="規則檔：1 件，在裝備清單裡篩選">
+    <svg class="silhouette" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-rules"></use></svg>
+    <span class="tape">規則檔</span>
+  </a>
+  <ul class="hung"><li><a href="entries/agents-md/">AGENTS.md</a></li></ul>
+</div>
+<div class="slot slot--schedule" data-slot="schedule">
+  <a class="slot-link" href="#slot-schedule" aria-label="排程：1 件，在裝備清單裡篩選">
+    <svg class="silhouette" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-schedule"></use></svg>
+    <span class="tape">排程</span>
+  </a>
+  <ul class="hung"><li><a href="entries/aihot/">AIHOT</a></li></ul>
+</div>
+
+    </div>
+  </div>
+  <p class="board-caption">
+    收錄 GitHub 上正熱門的 AI Agent 開源專案，照課堂公式拆成 8 個裝備欄位，一個專案一頁說明書。點剪影看那一格收了哪些專案。
+  </p>
+</section>
+
+<section class="manifest" id="manifest" aria-labelledby="manifest-title">
+  <div class="section-head">
+    <h2 id="manifest-title">裝備清單</h2>
+    <p>依星數排序。數據截至 2026-11-06。</p>
+  </div>
+  <div class="filters" role="group" aria-label="依欄位篩選">
+    <button type="button" class="filter" data-slot="all" data-name="全部" aria-pressed="true">全部<span class="n">9</span></button><button type="button" class="filter" data-slot="brain" data-name="大腦" aria-pressed="false">大腦<span class="n">1</span></button><button type="button" class="filter" data-slot="harness" data-name="整套 Harness" aria-pressed="false">整套 Harness<span class="n">1</span></button><button type="button" class="filter" data-slot="workspace" data-name="工作環境" aria-pressed="false">工作環境<span class="n">1</span></button><button type="button" class="filter" data-slot="tool" data-name="工具" aria-pressed="false">工具<span class="n">2</span></button><button type="button" class="filter" data-slot="connector" data-name="連接器" aria-pressed="false">連接器<span class="n">1</span></button><button type="button" class="filter" data-slot="skill" data-name="技能" aria-pressed="false">技能<span class="n">1</span></button><button type="button" class="filter" data-slot="rules" data-name="規則檔" aria-pressed="false">規則檔<span class="n">1</span></button><button type="button" class="filter" data-slot="schedule" data-name="排程" aria-pressed="false">排程<span class="n">1</span></button>
+  </div>
+  <p class="filter-status" aria-live="polite">共 9 件</p>
+  <ol class="rows">
+    <li class="row row--head" aria-hidden="true">
+      <span></span><span>專案</span><span>欄位</span><span>星數</span><span>上手難度</span><span>規則檔</span>
+    </li>
+    <li class="row" data-slot="harness">
+  <svg class="row-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-harness"></use></svg>
+  <div class="row-main">
+    <h3 class="row-name"><a href="entries/deepseek-harness/">DeepSeek Harness</a></h3>
+    <p class="row-summary">DeepSeek 開源的 agent 程式，整套功能都由外掛組成。</p>
+  </div>
+  <div class="row-meta">
+    <span class="row-slot"><span class="tape tape--small">整套 Harness</span></span>
+    <span class="row-stars"><span class="lbl">星數</span><span class="num">27.4 萬</span><span class="gauge" aria-hidden="true"><span style="width:98.4%"></span></span></span>
+    <span class="row-diff"><span class="lbl">上手難度</span><span class="pips" role="img" aria-label="上手難度 2，滿分 3"><span class="pip on"></span><span class="pip on"></span><span class="pip"></span></span></span>
+    <span class="row-rules"><span class="lbl">規則檔</span><span class="marks"><span class="mark on">AGENTS.md<span class="visually-hidden">：有</span></span><span class="mark on">CLAUDE.md<span class="visually-hidden">：有</span></span><span class="mark">SKILL.md<span class="visually-hidden">：沒有</span></span></span></span>
+  </div>
+</li>
+<li class="row" data-slot="connector">
+  <svg class="row-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-connector"></use></svg>
+  <div class="row-main">
+    <h3 class="row-name"><a href="entries/github-mcp-server/">GitHub MCP Server</a></h3>
+    <p class="row-summary">GitHub 官方的 MCP 伺服器，讓 agent 讀 repo、管理 issue 和 PR。</p>
+  </div>
+  <div class="row-meta">
+    <span class="row-slot"><span class="tape tape--small">連接器</span></span>
+    <span class="row-stars"><span class="lbl">星數</span><span class="num">3.4 萬</span><span class="gauge" aria-hidden="true"><span style="width:62.0%"></span></span></span>
+    <span class="row-diff"><span class="lbl">上手難度</span><span class="pips" role="img" aria-label="上手難度 2，滿分 3"><span class="pip on"></span><span class="pip on"></span><span class="pip"></span></span></span>
+    <span class="row-rules"><span class="lbl">規則檔</span><span class="marks"><span class="mark">AGENTS.md<span class="visually-hidden">：沒有</span></span><span class="mark">CLAUDE.md<span class="visually-hidden">：沒有</span></span><span class="mark">SKILL.md<span class="visually-hidden">：沒有</span></span></span></span>
+  </div>
+</li>
+<li class="row" data-slot="brain">
+  <svg class="row-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-brain"></use></svg>
+  <div class="row-main">
+    <h3 class="row-name"><a href="entries/magpie/">magpie</a></h3>
+    <p class="row-summary">一個本機閘道，替 Claude Code、Codex 等 agent 統一切換模型。</p>
+  </div>
+  <div class="row-meta">
+    <span class="row-slot"><span class="tape tape--small">大腦</span></span>
+    <span class="row-stars"><span class="lbl">星數</span><span class="num">3.1 萬</span><span class="gauge" aria-hidden="true"><span style="width:59.9%"></span></span></span>
+    <span class="row-diff"><span class="lbl">上手難度</span><span class="pips" role="img" aria-label="上手難度 2，滿分 3"><span class="pip on"></span><span class="pip on"></span><span class="pip"></span></span></span>
+    <span class="row-rules"><span class="lbl">規則檔</span><span class="marks"><span class="mark on">AGENTS.md<span class="visually-hidden">：有</span></span><span class="mark on">CLAUDE.md<span class="visually-hidden">：有</span></span><span class="mark">SKILL.md<span class="visually-hidden">：沒有</span></span></span></span>
+  </div>
+</li>
+<li class="row" data-slot="rules">
+  <svg class="row-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-rules"></use></svg>
+  <div class="row-main">
+    <h3 class="row-name"><a href="entries/agents-md/">AGENTS.md</a></h3>
+    <p class="row-summary">一個開放格式：在專案裡放一份給 coding agent 讀的說明書。</p>
+  </div>
+  <div class="row-meta">
+    <span class="row-slot"><span class="tape tape--small">規則檔</span></span>
+    <span class="row-stars"><span class="lbl">星數</span><span class="num">2.5 萬</span><span class="gauge" aria-hidden="true"><span style="width:56.7%"></span></span></span>
+    <span class="row-diff"><span class="lbl">上手難度</span><span class="pips" role="img" aria-label="上手難度 1，滿分 3"><span class="pip on"></span><span class="pip"></span><span class="pip"></span></span></span>
+    <span class="row-rules"><span class="lbl">規則檔</span><span class="marks"><span class="mark on">AGENTS.md<span class="visually-hidden">：有</span></span><span class="mark">CLAUDE.md<span class="visually-hidden">：沒有</span></span><span class="mark">SKILL.md<span class="visually-hidden">：沒有</span></span></span></span>
+  </div>
+</li>
+<li class="row" data-slot="skill">
+  <svg class="row-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-skill"></use></svg>
+  <div class="row-main">
+    <h3 class="row-name"><a href="entries/anatomy/">Anatomy</a></h3>
+    <p class="row-summary">一個 agent 技能：把抽象概念畫成會動的等角機械圖解。</p>
+  </div>
+  <div class="row-meta">
+    <span class="row-slot"><span class="tape tape--small">技能</span></span>
+    <span class="row-stars"><span class="lbl">星數</span><span class="num">2.5 萬</span><span class="gauge" aria-hidden="true"><span style="width:56.6%"></span></span></span>
+    <span class="row-diff"><span class="lbl">上手難度</span><span class="pips" role="img" aria-label="上手難度 2，滿分 3"><span class="pip on"></span><span class="pip on"></span><span class="pip"></span></span></span>
+    <span class="row-rules"><span class="lbl">規則檔</span><span class="marks"><span class="mark">AGENTS.md<span class="visually-hidden">：沒有</span></span><span class="mark">CLAUDE.md<span class="visually-hidden">：沒有</span></span><span class="mark on">SKILL.md<span class="visually-hidden">：有</span></span></span></span>
+  </div>
+</li>
+<li class="row" data-slot="tool">
+  <svg class="row-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-tool"></use></svg>
+  <div class="row-main">
+    <h3 class="row-name"><a href="entries/anydoc/">anydoc</a></h3>
+    <p class="row-summary">把 Word、PowerPoint、Excel、PDF 等文件轉成乾淨 Markdown 的工具。</p>
+  </div>
+  <div class="row-meta">
+    <span class="row-slot"><span class="tape tape--small">工具</span></span>
+    <span class="row-stars"><span class="lbl">星數</span><span class="num">2.3 萬</span><span class="gauge" aria-hidden="true"><span style="width:55.3%"></span></span></span>
+    <span class="row-diff"><span class="lbl">上手難度</span><span class="pips" role="img" aria-label="上手難度 1，滿分 3"><span class="pip on"></span><span class="pip"></span><span class="pip"></span></span></span>
+    <span class="row-rules"><span class="lbl">規則檔</span><span class="marks"><span class="mark">AGENTS.md<span class="visually-hidden">：沒有</span></span><span class="mark">CLAUDE.md<span class="visually-hidden">：沒有</span></span><span class="mark">SKILL.md<span class="visually-hidden">：沒有</span></span></span></span>
+  </div>
+</li>
+<li class="row" data-slot="tool">
+  <svg class="row-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-tool"></use></svg>
+  <div class="row-main">
+    <h3 class="row-name"><a href="entries/moli/">Moli</a></h3>
+    <p class="row-summary">專為 AI agent 做的無頭瀏覽器，平常只處理網頁結構，需要時才排版、繪製畫面。</p>
+  </div>
+  <div class="row-meta">
+    <span class="row-slot"><span class="tape tape--small">工具</span></span>
+    <span class="row-stars"><span class="lbl">星數</span><span class="num">2.3 萬</span><span class="gauge" aria-hidden="true"><span style="width:54.8%"></span></span></span>
+    <span class="row-diff"><span class="lbl">上手難度</span><span class="pips" role="img" aria-label="上手難度 2，滿分 3"><span class="pip on"></span><span class="pip on"></span><span class="pip"></span></span></span>
+    <span class="row-rules"><span class="lbl">規則檔</span><span class="marks"><span class="mark on">AGENTS.md<span class="visually-hidden">：有</span></span><span class="mark">CLAUDE.md<span class="visually-hidden">：沒有</span></span><span class="mark">SKILL.md<span class="visually-hidden">：沒有</span></span></span></span>
+  </div>
+</li>
+<li class="row" data-slot="workspace">
+  <svg class="row-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-workspace"></use></svg>
+  <div class="row-main">
+    <h3 class="row-name"><a href="entries/openbot/">OpenBot</a></h3>
+    <p class="row-summary">可以架在自己機器上的 AI 同事範本，每個 agent 都有自己的瀏覽器和檔案。</p>
+  </div>
+  <div class="row-meta">
+    <span class="row-slot"><span class="tape tape--small">工作環境</span></span>
+    <span class="row-stars"><span class="lbl">星數</span><span class="num">1.0 萬</span><span class="gauge" aria-hidden="true"><span style="width:40.8%"></span></span></span>
+    <span class="row-diff"><span class="lbl">上手難度</span><span class="pips" role="img" aria-label="上手難度 3，滿分 3"><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span></span></span>
+    <span class="row-rules"><span class="lbl">規則檔</span><span class="marks"><span class="mark">AGENTS.md<span class="visually-hidden">：沒有</span></span><span class="mark">CLAUDE.md<span class="visually-hidden">：沒有</span></span><span class="mark">SKILL.md<span class="visually-hidden">：沒有</span></span></span></span>
+  </div>
+</li>
+<li class="row" data-slot="schedule">
+  <svg class="row-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-schedule"></use></svg>
+  <div class="row-main">
+    <h3 class="row-name"><a href="entries/aihot/">AIHOT</a></h3>
+    <p class="row-summary">每天定時找熱點、自己寫日報的網站框架，可以改成任何領域的版本。</p>
+  </div>
+  <div class="row-meta">
+    <span class="row-slot"><span class="tape tape--small">排程</span></span>
+    <span class="row-stars"><span class="lbl">星數</span><span class="num">9,635</span><span class="gauge" aria-hidden="true"><span style="width:39.7%"></span></span></span>
+    <span class="row-diff"><span class="lbl">上手難度</span><span class="pips" role="img" aria-label="上手難度 3，滿分 3"><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span></span></span>
+    <span class="row-rules"><span class="lbl">規則檔</span><span class="marks"><span class="mark on">AGENTS.md<span class="visually-hidden">：有</span></span><span class="mark on">CLAUDE.md<span class="visually-hidden">：有</span></span><span class="mark">SKILL.md<span class="visually-hidden">：沒有</span></span></span></span>
+  </div>
+</li>
+
+  </ol>
+</section>
+
+<section class="rule-files" id="rule-files" aria-labelledby="rule-files-title">
+  <div class="section-head">
+    <h2 id="rule-files-title">規則檔觀察</h2>
+    <p>收錄的 9 個專案裡，有 5 個在 repo 根目錄放了 AGENTS.md，3 個放了 CLAUDE.md；另有 1 個專案本身就是一份 SKILL.md 技能。每個圓點代表一個專案，順序和裝備清單相同。</p>
+  </div>
+  <div class="pegs">
+    <div class="peg-strip"><span class="file">AGENTS.md</span><span class="peg-row" role="img" aria-label="AGENTS.md：9 個專案中有 5 個（DeepSeek Harness、magpie、AGENTS.md、Moli、AIHOT）"><span class="peg on" title="DeepSeek Harness"></span><span class="peg" title="GitHub MCP Server"></span><span class="peg on" title="magpie"></span><span class="peg on" title="AGENTS.md"></span><span class="peg" title="Anatomy"></span><span class="peg" title="anydoc"></span><span class="peg on" title="Moli"></span><span class="peg" title="OpenBot"></span><span class="peg on" title="AIHOT"></span></span><span class="count">5／9</span></div><div class="peg-strip"><span class="file">CLAUDE.md</span><span class="peg-row" role="img" aria-label="CLAUDE.md：9 個專案中有 3 個（DeepSeek Harness、magpie、AIHOT）"><span class="peg on" title="DeepSeek Harness"></span><span class="peg" title="GitHub MCP Server"></span><span class="peg on" title="magpie"></span><span class="peg" title="AGENTS.md"></span><span class="peg" title="Anatomy"></span><span class="peg" title="anydoc"></span><span class="peg" title="Moli"></span><span class="peg" title="OpenBot"></span><span class="peg on" title="AIHOT"></span></span><span class="count">3／9</span></div><div class="peg-strip"><span class="file">SKILL.md</span><span class="peg-row" role="img" aria-label="SKILL.md：9 個專案中有 1 個（Anatomy）"><span class="peg" title="DeepSeek Harness"></span><span class="peg" title="GitHub MCP Server"></span><span class="peg" title="magpie"></span><span class="peg" title="AGENTS.md"></span><span class="peg on" title="Anatomy"></span><span class="peg" title="anydoc"></span><span class="peg" title="Moli"></span><span class="peg" title="OpenBot"></span><span class="peg" title="AIHOT"></span></span><span class="count">1／9</span></div>
+  </div>
+  <p class="rule-note">
+    GitHub 在 2026 年 10 月的 <a class="ext" rel="noopener" href="https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/">Octoverse 報告</a>提到：今年新建的 repo 裡，有 agent 設定檔的平均 commit 數，是沒有的 8 倍。這個網站自己也是靠一份 AGENTS.md 長出來的，<a href="./about/">看它怎麼運作</a>。
+  </p>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <p class="footer-title">Harness 圖鑑</p>
+      <p>收錄 GitHub 上正熱門的 AI Agent 開源專案，照「AI Agent ＝ Model ＋ Harness」分成 8 個裝備欄位，一個專案一頁說明書。</p>
+    </div>
+    <div>
+      <p>數據快照：2026-11-06。星數每天都在變，以 GitHub 上的為準。</p>
+      <p>每一頁都由 <a href="./about/">AGENTS.md 規則</a>產生。</p>
+    </div>
+    <div>
+      <p>TAICA 生成式 AI：文字與圖像生成的原理與實務・第九週作業</p>
+      <p><a class="ext" rel="noopener" href="https://github.com/otis222/harness-dex">原始碼與 AGENTS.md</a></p>
+    </div>
+  </div>
+</footer>
+<script src="./assets/js/site.js" defer></script>
+</body>
+</html>

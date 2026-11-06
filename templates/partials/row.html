@@ -1,0 +1,13 @@
+<li class="row" data-slot="{{slot}}">
+  <svg class="row-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-{{slot}}"></use></svg>
+  <div class="row-main">
+    <h3 class="row-name"><a href="entries/{{slug}}/">{{name}}</a></h3>
+    <p class="row-summary">{{summary}}</p>
+  </div>
+  <div class="row-meta">
+    <span class="row-slot"><span class="tape tape--small">{{slot_name}}</span></span>
+    <span class="row-stars"><span class="lbl">星數</span><span class="num">{{stars}}</span><span class="gauge" aria-hidden="true"><span style="width:{{gauge}}%"></span></span></span>
+    <span class="row-diff"><span class="lbl">上手難度</span>{{difficulty_html}}</span>
+    <span class="row-rules"><span class="lbl">規則檔</span>{{rule_marks}}</span>
+  </div>
+</li>

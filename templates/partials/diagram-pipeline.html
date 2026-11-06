@@ -1,0 +1,34 @@
+<figure class="pipeline">
+  <div class="pipeline-rail">
+    <strong>AGENTS.md</strong>
+    <span>每一步都照手冊做：收什麼、怎麼分類、寫哪幾段、做完檢查什麼</span>
+  </div>
+  <ol class="pipeline-steps">
+    <li>
+      <span class="step-who">你</span>
+      <strong>下指令</strong>
+      <code>收錄 &lt;GitHub 網址&gt;</code>
+    </li>
+    <li>
+      <span class="step-who">snapshot.py</span>
+      <strong>抓數據快照</strong>
+      <code>raw/&lt;slug&gt;/&lt;日期&gt;.json</code>
+    </li>
+    <li>
+      <span class="step-who">AI</span>
+      <strong>讀 README，寫收錄稿</strong>
+      <code>notes/&lt;slug&gt;.md</code>
+    </li>
+    <li>
+      <span class="step-who">build.py</span>
+      <strong>組成網頁</strong>
+      <code>entries/&lt;slug&gt;/</code>
+    </li>
+    <li>
+      <span class="step-who">check.py</span>
+      <strong>健檢，0 個錯誤才算完成</strong>
+      <code>✓ 0 個錯誤</code>
+    </li>
+  </ol>
+  <figcaption>收錄一個新專案的流程。人只需要下第一個指令，最後再驗收。</figcaption>
+</figure>

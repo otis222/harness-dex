@@ -1,0 +1,201 @@
+[
+  {
+    "slug": "deepseek-harness",
+    "name": "DeepSeek Harness",
+    "repo": "deepseek-ai/deepseek-harness",
+    "url": "entries/deepseek-harness/",
+    "slot": "harness",
+    "slot_name": "整套 Harness",
+    "summary": "DeepSeek 開源的 agent 程式，整套功能都由外掛組成。",
+    "difficulty": 2,
+    "tags": [
+      "外掛架構",
+      "Web UI",
+      "開發者預覽"
+    ],
+    "stars": 273888,
+    "checked_at": "2026-11-06",
+    "root_files": {
+      "AGENTS.md": true,
+      "CLAUDE.md": true,
+      "SKILL.md": false
+    }
+  },
+  {
+    "slug": "github-mcp-server",
+    "name": "GitHub MCP Server",
+    "repo": "github/github-mcp-server",
+    "url": "entries/github-mcp-server/",
+    "slot": "connector",
+    "slot_name": "連接器",
+    "summary": "GitHub 官方的 MCP 伺服器，讓 agent 讀 repo、管理 issue 和 PR。",
+    "difficulty": 2,
+    "tags": [
+      "MCP",
+      "官方",
+      "權限控管"
+    ],
+    "stars": 34265,
+    "checked_at": "2026-11-06",
+    "root_files": {
+      "AGENTS.md": false,
+      "CLAUDE.md": false,
+      "SKILL.md": false
+    }
+  },
+  {
+    "slug": "magpie",
+    "name": "magpie",
+    "repo": "yetone/magpie",
+    "url": "entries/magpie/",
+    "slot": "brain",
+    "slot_name": "大腦",
+    "summary": "一個本機閘道，替 Claude Code、Codex 等 agent 統一切換模型。",
+    "difficulty": 2,
+    "tags": [
+      "模型切換",
+      "本機閘道",
+      "多帳號"
+    ],
+    "stars": 30529,
+    "checked_at": "2026-11-06",
+    "root_files": {
+      "AGENTS.md": true,
+      "CLAUDE.md": true,
+      "SKILL.md": false
+    }
+  },
+  {
+    "slug": "agents-md",
+    "name": "AGENTS.md",
+    "repo": "agentsmd/agents.md",
+    "url": "entries/agents-md/",
+    "slot": "rules",
+    "slot_name": "規則檔",
+    "summary": "一個開放格式：在專案裡放一份給 coding agent 讀的說明書。",
+    "difficulty": 1,
+    "tags": [
+      "開放格式",
+      "規則檔",
+      "跨工具"
+    ],
+    "stars": 25347,
+    "checked_at": "2026-11-06",
+    "root_files": {
+      "AGENTS.md": true,
+      "CLAUDE.md": false,
+      "SKILL.md": false
+    }
+  },
+  {
+    "slug": "anatomy",
+    "name": "Anatomy",
+    "repo": "wheresryan22/anatomy",
+    "url": "entries/anatomy/",
+    "slot": "skill",
+    "slot_name": "技能",
+    "summary": "一個 agent 技能：把抽象概念畫成會動的等角機械圖解。",
+    "difficulty": 2,
+    "tags": [
+      "Agent Skill",
+      "SVG",
+      "互動圖解"
+    ],
+    "stars": 25263,
+    "checked_at": "2026-11-06",
+    "root_files": {
+      "AGENTS.md": false,
+      "CLAUDE.md": false,
+      "SKILL.md": true
+    }
+  },
+  {
+    "slug": "anydoc",
+    "name": "anydoc",
+    "repo": "firecrawl/anydoc",
+    "url": "entries/anydoc/",
+    "slot": "tool",
+    "slot_name": "工具",
+    "summary": "把 Word、PowerPoint、Excel、PDF 等文件轉成乾淨 Markdown 的工具。",
+    "difficulty": 1,
+    "tags": [
+      "文件轉檔",
+      "Rust",
+      "Agent Skill"
+    ],
+    "stars": 23369,
+    "checked_at": "2026-11-06",
+    "root_files": {
+      "AGENTS.md": false,
+      "CLAUDE.md": false,
+      "SKILL.md": false
+    }
+  },
+  {
+    "slug": "moli",
+    "name": "Moli",
+    "repo": "lexmount/moli",
+    "url": "entries/moli/",
+    "slot": "tool",
+    "slot_name": "工具",
+    "summary": "專為 AI agent 做的無頭瀏覽器，平常只處理網頁結構，需要時才排版、繪製畫面。",
+    "difficulty": 2,
+    "tags": [
+      "無頭瀏覽器",
+      "網頁擷取",
+      "Rust",
+      "Agent Skill"
+    ],
+    "stars": 22744,
+    "checked_at": "2026-11-06",
+    "root_files": {
+      "AGENTS.md": true,
+      "CLAUDE.md": false,
+      "SKILL.md": false
+    }
+  },
+  {
+    "slug": "openbot",
+    "name": "OpenBot",
+    "repo": "CopilotKit/OpenBot",
+    "url": "entries/openbot/",
+    "slot": "workspace",
+    "slot_name": "工作環境",
+    "summary": "可以架在自己機器上的 AI 同事範本，每個 agent 都有自己的瀏覽器和檔案。",
+    "difficulty": 3,
+    "tags": [
+      "自架",
+      "行為紀錄",
+      "AG-UI"
+    ],
+    "stars": 10257,
+    "checked_at": "2026-11-06",
+    "root_files": {
+      "AGENTS.md": false,
+      "CLAUDE.md": false,
+      "SKILL.md": false
+    }
+  },
+  {
+    "slug": "aihot",
+    "name": "AIHOT",
+    "repo": "KKKKhazix/AIHOT",
+    "url": "entries/aihot/",
+    "slot": "schedule",
+    "slot_name": "排程",
+    "summary": "每天定時找熱點、自己寫日報的網站框架，可以改成任何領域的版本。",
+    "difficulty": 3,
+    "tags": [
+      "定時任務",
+      "日報",
+      "自架"
+    ],
+    "stars": 9635,
+    "checked_at": "2026-11-06",
+    "root_files": {
+      "AGENTS.md": true,
+      "CLAUDE.md": true,
+      "SKILL.md": false
+    }
+  }
+]

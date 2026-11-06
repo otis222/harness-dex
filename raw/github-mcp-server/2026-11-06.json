@@ -1,0 +1,27 @@
+{
+  "repo": "github/github-mcp-server",
+  "url": "https://github.com/github/github-mcp-server",
+  "checked_at": "2026-11-06",
+  "stars": 34265,
+  "forks": 5293,
+  "language": "Go",
+  "license": "MIT",
+  "created_at": "2025-03-05",
+  "pushed_at": "2026-11-06",
+  "archived": false,
+  "homepage": null,
+  "topics": [
+    "github",
+    "mcp",
+    "mcp-server"
+  ],
+  "root_files": {
+    "AGENTS.md": false,
+    "CLAUDE.md": false,
+    "SKILL.md": false
+  },
+  "sources": {
+    "repo": "GitHub search API",
+    "root_files": "git ls-tree"
+  }
+}

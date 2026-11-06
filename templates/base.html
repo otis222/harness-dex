@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{page_title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="icon" href="{{root}}assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700;800&family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="{{root}}assets/css/site.css">
+</head>
+<body class="{{body_class}}">
+<!-- 這個檔案由 tools/build.py 產生，請勿手改。內容改 notes/ 或 pages/，版型改 templates/，再執行 python tools/build.py -->
+{{sprite}}
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <a class="brand" href="{{root}}">
+    <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-harness"></use></svg>
+    <span>{{site_title}}</span>
+  </a>
+  <nav class="site-nav" aria-label="主要">
+    <a href="{{root}}#manifest">裝備清單</a>
+    <a href="{{root}}#rule-files">規則檔觀察</a>
+    <a href="{{root}}about/">這個網站怎麼長出來的</a>
+    {{github_link}}
+  </nav>
+</header>
+<main id="main">
+{{content}}
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <p class="footer-title">{{site_title}}</p>
+      <p>{{site_description}}</p>
+    </div>
+    <div>
+      <p>數據快照：{{snapshot_date}}。星數每天都在變，以 GitHub 上的為準。</p>
+      <p>每一頁都由 <a href="{{root}}about/">AGENTS.md 規則</a>產生。</p>
+    </div>
+    <div>
+      <p>{{credit}}</p>
+      {{github_footer}}
+    </div>
+  </div>
+</footer>
+<script src="{{root}}assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>這個網站怎麼長出來的｜Harness 圖鑑</title>
+<meta name="description" content="Harness 圖鑑的每一頁，都是 AI 照著同一份 AGENTS.md 做出來的。人負責挑專案、審稿和驗收。">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700;800&family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body class="page-about">
+<!-- 這個檔案由 tools/build.py 產生，請勿手改。內容改 notes/ 或 pages/，版型改 templates/，再執行 python tools/build.py -->
+<svg class="sprite" aria-hidden="true" focusable="false"><defs><mask id="m-brain" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><circle cx="22" cy="23" r="11"/><circle cx="32" cy="17" r="11"/><circle cx="42" cy="23" r="11"/><circle cx="18" cy="36" r="11"/><circle cx="46" cy="36" r="11"/><circle cx="26" cy="46" r="10"/><circle cx="38" cy="46" r="10"/><circle cx="32" cy="32" r="14"/></g><g fill="none" stroke="#000" stroke-width="2.6" stroke-linecap="round"><path d="M32 7c-2 7 2 12 0 19s2 13 0 20-1 7 0 10"/><path d="M13 25c4-3 8 2 12-1"/><path d="M11 38c4-3 9 2 14-1"/><path d="M19 49c3-3 6 1 9-2"/><path d="M21 13c3 3-1 6 3 9"/><path d="M51 25c-4-3-8 2-12-1"/><path d="M53 38c-4-3-9 2-14-1"/><path d="M45 49c-3-3-6 1-9-2"/><path d="M43 13c-3 3 1 6-3 9"/></g></mask><mask id="m-harness" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><path fill="#fff" d="M20 5h7l5 17 5-17h7l3 9c1 6 4 10 9 12v32a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V26c5-2 8-6 9-12z"/><g fill="#000"><rect x="31" y="22" width="2" height="40"/><rect x="6" y="37" width="52" height="4"/><rect x="6" y="47" width="52" height="4"/></g></mask><mask id="m-workspace" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect x="11" y="10" width="42" height="31" rx="3" fill="#fff"/><rect x="15" y="14" width="34" height="23" rx="1" fill="#000"/><path d="M20 21l5 4-5 4" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="28" y="28" width="9" height="2.8" rx="1.4" fill="#fff"/><path d="M5 45h54l-3 7a2 2 0 0 1-2 1.5H10A2 2 0 0 1 8 52z" fill="#fff"/><rect x="27" y="45" width="10" height="2" fill="#000"/></mask><mask id="m-tool" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g transform="rotate(-45 32 32)"><g fill="#fff"><rect x="12" y="28.5" width="40" height="7" rx="3.5"/><circle cx="11" cy="32" r="9.5"/><circle cx="53" cy="32" r="8"/></g><g fill="#000"><rect x="-1" y="28.2" width="13.5" height="7.6"/><circle cx="53" cy="32" r="4"/></g></g></mask><mask id="m-connector" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><rect x="23" y="6" width="5" height="16" rx="1.5"/><rect x="36" y="6" width="5" height="16" rx="1.5"/><rect x="16" y="19" width="32" height="23" rx="5"/><path d="M27 41h10v5a5 5 0 0 1-10 0z"/></g><path d="M32 49c0 8 10 6 18 11" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><rect x="21" y="27" width="22" height="3" rx="1.5" fill="#000"/></mask><mask id="m-skill" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><rect x="16" y="11" width="32" height="42"/><rect x="10" y="6" width="44" height="10" rx="5"/><rect x="10" y="48" width="44" height="10" rx="5"/></g><g fill="#000"><rect x="16" y="15.5" width="32" height="1.6"/><rect x="16" y="46.9" width="32" height="1.6"/><rect x="21" y="22" width="22" height="2.8" rx="1.4"/><rect x="21" y="28" width="17" height="2.8" rx="1.4"/><rect x="21" y="34" width="22" height="2.8" rx="1.4"/><rect x="21" y="40" width="12" height="2.8" rx="1.4"/></g></mask><mask id="m-rules" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect x="13" y="5" width="38" height="50" rx="3" fill="#fff"/><path d="M40 52v10l4-3.2 4 3.2V52z" fill="#fff"/><rect x="18" y="5" width="2.6" height="50" fill="#000"/><path d="M31 20l-3 21M39 20l-3 21M26 27h17M25 34h17" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/></mask><mask id="m-schedule" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><circle cx="14" cy="14" r="7"/><circle cx="50" cy="14" r="7"/><rect x="29" y="8" width="6" height="7" rx="1.5"/><circle cx="32" cy="35" r="21"/></g><circle cx="32" cy="35" r="16" fill="#000"/><g fill="none" stroke="#fff" stroke-linecap="round"><path d="M32 35V24M32 35l8 5" stroke-width="3.2"/><path d="M18 51l-5 8M46 51l5 8" stroke-width="4.5"/></g><circle cx="32" cy="35" r="2.6" fill="#fff"/></mask></defs><symbol id="icon-brain" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-brain)"/></symbol><symbol id="icon-harness" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-harness)"/></symbol><symbol id="icon-workspace" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-workspace)"/></symbol><symbol id="icon-tool" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-tool)"/></symbol><symbol id="icon-connector" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-connector)"/></symbol><symbol id="icon-skill" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-skill)"/></symbol><symbol id="icon-rules" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-rules)"/></symbol><symbol id="icon-schedule" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-schedule)"/></symbol></svg>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <a class="brand" href="../">
+    <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-harness"></use></svg>
+    <span>Harness 圖鑑</span>
+  </a>
+  <nav class="site-nav" aria-label="主要">
+    <a href="../#manifest">裝備清單</a>
+    <a href="../#rule-files">規則檔觀察</a>
+    <a href="../about/">這個網站怎麼長出來的</a>
+    <a class="ext" rel="noopener" href="https://github.com/otis222/harness-dex">GitHub</a>
+  </nav>
+</header>
+<main id="main">
+<article class="page">
+  <header class="page-head">
+    <h1>這個網站怎麼長出來的</h1>
+    <p class="lede">Harness 圖鑑的每一頁，都是 AI 照著同一份 AGENTS.md 做出來的。人負責挑專案、審稿和驗收。</p>
+  </header>
+  <div class="page-body">
+    <h2>一份手冊，管整個網站</h2>
+<p>這個網站的規矩全部寫在 repo 根目錄的 <code>AGENTS.md</code>：收錄哪些專案、放進哪個裝備欄位、每頁固定寫哪 8 段、什麼不能做、做完要檢查什麼。接手的 AI 不論是 Codex、Claude Code 還是 DeepSeek Harness，開工前都先讀這一份，所以做出來的頁面長得一樣、寫法一致。</p>
+<h2>收錄一個新專案</h2>
+<figure class="pipeline">
+  <div class="pipeline-rail">
+    <strong>AGENTS.md</strong>
+    <span>每一步都照手冊做：收什麼、怎麼分類、寫哪幾段、做完檢查什麼</span>
+  </div>
+  <ol class="pipeline-steps">
+    <li>
+      <span class="step-who">你</span>
+      <strong>下指令</strong>
+      <code>收錄 &lt;GitHub 網址&gt;</code>
+    </li>
+    <li>
+      <span class="step-who">snapshot.py</span>
+      <strong>抓數據快照</strong>
+      <code>raw/&lt;slug&gt;/&lt;日期&gt;.json</code>
+    </li>
+    <li>
+      <span class="step-who">AI</span>
+      <strong>讀 README，寫收錄稿</strong>
+      <code>notes/&lt;slug&gt;.md</code>
+    </li>
+    <li>
+      <span class="step-who">build.py</span>
+      <strong>組成網頁</strong>
+      <code>entries/&lt;slug&gt;/</code>
+    </li>
+    <li>
+      <span class="step-who">check.py</span>
+      <strong>健檢，0 個錯誤才算完成</strong>
+      <code>✓ 0 個錯誤</code>
+    </li>
+  </ol>
+  <figcaption>收錄一個新專案的流程。人只需要下第一個指令，最後再驗收。</figcaption>
+</figure>
+<p>這個分工借用了課堂上的 LLM Wiki：</p>
+<ul><li><strong>規則</strong>：<code>AGENTS.md</code>。人和 AI 一起寫，規則有變就在 <code>log.md</code> 記一筆。</li><li><strong>原始資料</strong>：<code>raw/</code> 裡的 GitHub 數據快照，由 <code>tools/snapshot.py</code> 產生，只增不改。網頁上的星數、日期、授權全部從這裡讀，AI 不會自己打數字。</li><li><strong>收錄稿</strong>：<code>notes/</code> 裡每個專案一份 Markdown，是 AI 讀完 README 和官方文件後寫的說明書原稿。</li><li><strong>網頁</strong>：<code>tools/build.py</code> 把收錄稿和快照組合成網頁。網頁不手改；要改內容就改收錄稿，再重新產生。</li></ul>
+<h2>只要三句話</h2>
+<p>收錄一個新專案：</p>
+<pre class="code" data-lang="text"><code>收錄 https://github.com/owner/repo</code></pre>
+<p>更新所有專案的數據，順便修正過時的說法：</p>
+<pre class="code" data-lang="text"><code>更新數據</code></pre>
+<p>全站健檢，找出過期的快照、失效的連結和不再成立的說法：</p>
+<pre class="code" data-lang="text"><code>健檢</code></pre>
+<p>每一句背後的完整步驟，都寫在 <code>AGENTS.md</code> 第 4 節。</p>
+<h2>規則檔只是提醒，所以要有健檢</h2>
+<p>寫在手冊裡的規則，AI 不一定每次都照做。這個網站用 <code>tools/check.py</code> 把規則變成可以驗收的項目：</p>
+<ul><li>每份收錄稿的欄位是否齊全，8 個段落的順序對不對。</li><li>「搭配裝備」連到的條目是否真的存在。</li><li>正文裡有沒有手打的星數。</li><li>有沒有混進簡體字。</li><li>網頁是不是最新的：檢查腳本會自己重新產生一次網頁，和 repo 裡的版本逐一比對。</li></ul>
+<p>錯誤要修到 0 個，才算完成。</p>
+<h2>實測：換一個 AI 照手冊做</h2>
+<p>規則寫得清不清楚，要換一個沒參與過的 AI 來做才知道。網站建好後，另外開了一個全新的 AI 工作階段，只給它這個資料夾和一句話：</p>
+<pre class="code" data-lang="text"><code>收錄 https://github.com/lexmount/moli</code></pre>
+<p>另外只補充了執行環境的事（例如這台電腦的 Python 指令叫 <code>python3</code>），並請它回報手冊哪裡寫得不清楚。</p>
+<ul><li><strong>結果</strong>：它照 <code>AGENTS.md</code> 4.1 的十個步驟做完：抓快照、讀 README 和官方技能說明、判斷放「工具」、寫收錄稿、產生網頁、更新 <code>NOTES.md</code>，健檢 0 個錯誤。成品就是 <a class="wikilink" href="../entries/moli/"><svg class="mini" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-tool"></use></svg>Moli</a> 這一頁，對照原始 README 審過後收進網站。</li><li><strong>它卡住的地方</strong>：它列出 10 處得自己判斷的地方，例如收錄門檻寫「以快照為準」，這一步卻排在抓快照之前；上手難度 1 和 2 的界線不清楚；標語該從哪裡找沒有說。這些都補進了 <code>AGENTS.md</code>，並在 <code>log.md</code> 記了一筆。下一個接手的 AI 遇到同樣的情況，就不用再猜。</li></ul>
+<h2>為什麼要把規矩寫下來</h2>
+<p>GitHub 在 2026 年 10 月發表的 Octoverse 報告提到：到 2026 年 9 月，超過四成的 pull request 是 agent 先寫出第一版；今年新建的 repo 裡，有 agent 設定檔的平均 commit 數是沒有的 8 倍。agent 越常動手，「把規矩寫成檔案」就越像專案的基本功。</p>
+<p>資料來源：<a href="https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/" class="ext" rel="noopener">GitHub Octoverse 2026</a></p>
+  </div>
+</article>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <p class="footer-title">Harness 圖鑑</p>
+      <p>收錄 GitHub 上正熱門的 AI Agent 開源專案，照「AI Agent ＝ Model ＋ Harness」分成 8 個裝備欄位，一個專案一頁說明書。</p>
+    </div>
+    <div>
+      <p>數據快照：2026-11-06。星數每天都在變，以 GitHub 上的為準。</p>
+      <p>每一頁都由 <a href="../about/">AGENTS.md 規則</a>產生。</p>
+    </div>
+    <div>
+      <p>TAICA 生成式 AI：文字與圖像生成的原理與實務・第九週作業</p>
+      <p><a class="ext" rel="noopener" href="https://github.com/otis222/harness-dex">原始碼與 AGENTS.md</a></p>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

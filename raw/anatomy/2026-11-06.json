@@ -1,0 +1,28 @@
+{
+  "repo": "wheresryan22/anatomy",
+  "url": "https://github.com/wheresryan22/anatomy",
+  "checked_at": "2026-11-06",
+  "stars": 25263,
+  "forks": 2113,
+  "language": "JavaScript",
+  "license": "MIT",
+  "created_at": "2026-10-08",
+  "pushed_at": "2026-10-19",
+  "archived": false,
+  "homepage": "https://skills.wheresryan.sh/anatomy",
+  "topics": [
+    "agent-skill",
+    "open-source",
+    "svg",
+    "vizualization"
+  ],
+  "root_files": {
+    "AGENTS.md": false,
+    "CLAUDE.md": false,
+    "SKILL.md": true
+  },
+  "sources": {
+    "repo": "GitHub search API",
+    "root_files": "git ls-tree"
+  }
+}

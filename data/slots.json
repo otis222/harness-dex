@@ -1,0 +1,50 @@
+[
+  {
+    "id": "brain",
+    "name": "大腦",
+    "zone": "model",
+    "blurb": "負責想：理解任務、規劃步驟、寫出內容。換一顆大腦，同一套裝備的表現就不一樣。"
+  },
+  {
+    "id": "harness",
+    "name": "整套 Harness",
+    "zone": "harness",
+    "blurb": "已經組裝好的 agent 程式：接下任務、呼叫工具、看結果、再決定下一步。"
+  },
+  {
+    "id": "workspace",
+    "name": "工作環境",
+    "zone": "harness",
+    "blurb": "agent 自己的電腦或沙盒，可以存檔、跑程式，弄壞了也不會波及你的電腦。"
+  },
+  {
+    "id": "tool",
+    "name": "工具",
+    "zone": "harness",
+    "blurb": "讓 agent 動手的能力：讀寫檔案、終端機、瀏覽器、搜尋。"
+  },
+  {
+    "id": "connector",
+    "name": "連接器",
+    "zone": "harness",
+    "blurb": "把你的 App 和帳號接給 agent 用，最常見的接法是 MCP。"
+  },
+  {
+    "id": "skill",
+    "name": "技能",
+    "zone": "harness",
+    "blurb": "一個資料夾加一份 SKILL.md，教 agent 某件事的標準做法。"
+  },
+  {
+    "id": "rules",
+    "name": "規則檔",
+    "zone": "harness",
+    "blurb": "AGENTS.md、CLAUDE.md：agent 每次上工前先讀的手冊。"
+  },
+  {
+    "id": "schedule",
+    "name": "排程",
+    "zone": "harness",
+    "blurb": "時間一到，agent 自己開工，不用有人在旁邊下指令。"
+  }
+]

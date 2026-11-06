@@ -1,0 +1,31 @@
+{
+  "repo": "CopilotKit/OpenBot",
+  "url": "https://github.com/CopilotKit/OpenBot",
+  "checked_at": "2026-11-06",
+  "stars": 10257,
+  "forks": 1273,
+  "language": "TypeScript",
+  "license": "MIT",
+  "created_at": "2026-08-17",
+  "pushed_at": "2026-11-06",
+  "archived": false,
+  "homepage": "https://www.copilotkit.ai/openbot",
+  "topics": [
+    "ag-ui",
+    "agent-governance",
+    "ai-agents",
+    "browser-automation",
+    "copilotkit",
+    "generative-ui",
+    "mcp"
+  ],
+  "root_files": {
+    "AGENTS.md": false,
+    "CLAUDE.md": false,
+    "SKILL.md": false
+  },
+  "sources": {
+    "repo": "GitHub search API",
+    "root_files": "git ls-tree"
+  }
+}

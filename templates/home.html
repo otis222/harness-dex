@@ -1,0 +1,52 @@
+<section class="board-wrap" aria-labelledby="formula">
+  <div class="board">
+    <h1 class="formula" id="formula">
+      <span class="f-lead">AI Agent ＝</span>
+      <span class="f-model">Model</span>
+      <span class="f-plus">＋</span>
+      <span class="f-harness">Harness</span>
+    </h1>
+    <div class="zone zone--model">
+      <p class="zone-label" aria-hidden="true">Model</p>
+      {{slot_model}}
+    </div>
+    <div class="zone zone--plus" aria-hidden="true">＋</div>
+    <div class="zone zone--harness">
+      <p class="zone-label" aria-hidden="true">Harness</p>
+      {{slots_harness}}
+    </div>
+  </div>
+  <p class="board-caption">
+    收錄 GitHub 上正熱門的 AI Agent 開源專案，照課堂公式拆成 {{slot_count}} 個裝備欄位，一個專案一頁說明書。點剪影看那一格收了哪些專案。
+  </p>
+</section>
+
+<section class="manifest" id="manifest" aria-labelledby="manifest-title">
+  <div class="section-head">
+    <h2 id="manifest-title">裝備清單</h2>
+    <p>依星數排序。數據截至 {{snapshot_date}}。</p>
+  </div>
+  <div class="filters" role="group" aria-label="依欄位篩選">
+    {{filters}}
+  </div>
+  <p class="filter-status" aria-live="polite">共 {{entry_count}} 件</p>
+  <ol class="rows">
+    <li class="row row--head" aria-hidden="true">
+      <span></span><span>專案</span><span>欄位</span><span>星數</span><span>上手難度</span><span>規則檔</span>
+    </li>
+    {{rows}}
+  </ol>
+</section>
+
+<section class="rule-files" id="rule-files" aria-labelledby="rule-files-title">
+  <div class="section-head">
+    <h2 id="rule-files-title">規則檔觀察</h2>
+    <p>{{rule_sentence}}</p>
+  </div>
+  <div class="pegs">
+    {{peg_strips}}
+  </div>
+  <p class="rule-note">
+    GitHub 在 2026 年 10 月的 <a class="ext" rel="noopener" href="https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/">Octoverse 報告</a>提到：今年新建的 repo 裡，有 agent 設定檔的平均 commit 數，是沒有的 8 倍。這個網站自己也是靠一份 AGENTS.md 長出來的，<a href="./about/">看它怎麼運作</a>。
+  </p>
+</section>

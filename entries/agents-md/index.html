@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AGENTS.md｜Harness 圖鑑</title>
+<meta name="description" content="一個開放格式：在專案裡放一份給 coding agent 讀的說明書。">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700;800&family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body class="page-entry">
+<!-- 這個檔案由 tools/build.py 產生，請勿手改。內容改 notes/ 或 pages/，版型改 templates/，再執行 python tools/build.py -->
+<svg class="sprite" aria-hidden="true" focusable="false"><defs><mask id="m-brain" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><circle cx="22" cy="23" r="11"/><circle cx="32" cy="17" r="11"/><circle cx="42" cy="23" r="11"/><circle cx="18" cy="36" r="11"/><circle cx="46" cy="36" r="11"/><circle cx="26" cy="46" r="10"/><circle cx="38" cy="46" r="10"/><circle cx="32" cy="32" r="14"/></g><g fill="none" stroke="#000" stroke-width="2.6" stroke-linecap="round"><path d="M32 7c-2 7 2 12 0 19s2 13 0 20-1 7 0 10"/><path d="M13 25c4-3 8 2 12-1"/><path d="M11 38c4-3 9 2 14-1"/><path d="M19 49c3-3 6 1 9-2"/><path d="M21 13c3 3-1 6 3 9"/><path d="M51 25c-4-3-8 2-12-1"/><path d="M53 38c-4-3-9 2-14-1"/><path d="M45 49c-3-3-6 1-9-2"/><path d="M43 13c-3 3 1 6-3 9"/></g></mask><mask id="m-harness" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><path fill="#fff" d="M20 5h7l5 17 5-17h7l3 9c1 6 4 10 9 12v32a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V26c5-2 8-6 9-12z"/><g fill="#000"><rect x="31" y="22" width="2" height="40"/><rect x="6" y="37" width="52" height="4"/><rect x="6" y="47" width="52" height="4"/></g></mask><mask id="m-workspace" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect x="11" y="10" width="42" height="31" rx="3" fill="#fff"/><rect x="15" y="14" width="34" height="23" rx="1" fill="#000"/><path d="M20 21l5 4-5 4" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="28" y="28" width="9" height="2.8" rx="1.4" fill="#fff"/><path d="M5 45h54l-3 7a2 2 0 0 1-2 1.5H10A2 2 0 0 1 8 52z" fill="#fff"/><rect x="27" y="45" width="10" height="2" fill="#000"/></mask><mask id="m-tool" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g transform="rotate(-45 32 32)"><g fill="#fff"><rect x="12" y="28.5" width="40" height="7" rx="3.5"/><circle cx="11" cy="32" r="9.5"/><circle cx="53" cy="32" r="8"/></g><g fill="#000"><rect x="-1" y="28.2" width="13.5" height="7.6"/><circle cx="53" cy="32" r="4"/></g></g></mask><mask id="m-connector" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><rect x="23" y="6" width="5" height="16" rx="1.5"/><rect x="36" y="6" width="5" height="16" rx="1.5"/><rect x="16" y="19" width="32" height="23" rx="5"/><path d="M27 41h10v5a5 5 0 0 1-10 0z"/></g><path d="M32 49c0 8 10 6 18 11" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><rect x="21" y="27" width="22" height="3" rx="1.5" fill="#000"/></mask><mask id="m-skill" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><rect x="16" y="11" width="32" height="42"/><rect x="10" y="6" width="44" height="10" rx="5"/><rect x="10" y="48" width="44" height="10" rx="5"/></g><g fill="#000"><rect x="16" y="15.5" width="32" height="1.6"/><rect x="16" y="46.9" width="32" height="1.6"/><rect x="21" y="22" width="22" height="2.8" rx="1.4"/><rect x="21" y="28" width="17" height="2.8" rx="1.4"/><rect x="21" y="34" width="22" height="2.8" rx="1.4"/><rect x="21" y="40" width="12" height="2.8" rx="1.4"/></g></mask><mask id="m-rules" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect x="13" y="5" width="38" height="50" rx="3" fill="#fff"/><path d="M40 52v10l4-3.2 4 3.2V52z" fill="#fff"/><rect x="18" y="5" width="2.6" height="50" fill="#000"/><path d="M31 20l-3 21M39 20l-3 21M26 27h17M25 34h17" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/></mask><mask id="m-schedule" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><circle cx="14" cy="14" r="7"/><circle cx="50" cy="14" r="7"/><rect x="29" y="8" width="6" height="7" rx="1.5"/><circle cx="32" cy="35" r="21"/></g><circle cx="32" cy="35" r="16" fill="#000"/><g fill="none" stroke="#fff" stroke-linecap="round"><path d="M32 35V24M32 35l8 5" stroke-width="3.2"/><path d="M18 51l-5 8M46 51l5 8" stroke-width="4.5"/></g><circle cx="32" cy="35" r="2.6" fill="#fff"/></mask></defs><symbol id="icon-brain" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-brain)"/></symbol><symbol id="icon-harness" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-harness)"/></symbol><symbol id="icon-workspace" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-workspace)"/></symbol><symbol id="icon-tool" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-tool)"/></symbol><symbol id="icon-connector" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-connector)"/></symbol><symbol id="icon-skill" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-skill)"/></symbol><symbol id="icon-rules" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-rules)"/></symbol><symbol id="icon-schedule" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-schedule)"/></symbol></svg>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <a class="brand" href="../../">
+    <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-harness"></use></svg>
+    <span>Harness 圖鑑</span>
+  </a>
+  <nav class="site-nav" aria-label="主要">
+    <a href="../../#manifest">裝備清單</a>
+    <a href="../../#rule-files">規則檔觀察</a>
+    <a href="../../about/">這個網站怎麼長出來的</a>
+    <a class="ext" rel="noopener" href="https://github.com/otis222/harness-dex">GitHub</a>
+  </nav>
+</header>
+<main id="main">
+<article class="entry">
+  <nav class="crumbs" aria-label="目前位置">
+    <a href="../../#manifest">裝備清單</a>
+    <span aria-hidden="true">／</span>
+    <a href="../../#slot-rules">規則檔</a>
+  </nav>
+
+  <header class="entry-head">
+    <div class="plate" aria-hidden="true">
+      <svg class="silhouette" viewBox="0 0 64 64"><use href="#icon-rules"></use></svg>
+      <span class="tape">規則檔</span>
+    </div>
+    <div class="entry-title">
+      <h1>AGENTS.md</h1>
+      <p class="motto"><span class="motto-label">官方標語</span>「a README for agents」</p>
+      <p class="lede">一個開放格式：在專案裡放一份給 coding agent 讀的說明書。</p>
+      <p class="entry-links"><a class="ext" rel="noopener" href="https://github.com/agentsmd/agents.md">GitHub repo</a><a class="ext" rel="noopener" href="https://agents.md">官方網站</a></p>
+    </div>
+  </header>
+
+  <section class="spec" aria-label="規格">
+    <dl class="spec-grid">
+      <div class="spec-stars">
+        <dt>星數</dt>
+        <dd><span class="big">2.5 萬</span><span class="gauge" title="對數刻度：1 千～30 萬"><span style="width:56.7%"></span></span></dd>
+      </div>
+      <div><dt>Fork</dt><dd>1,940</dd></div>
+      <div><dt>主要語言</dt><dd>TypeScript</dd></div>
+      <div><dt>授權</dt><dd>MIT</dd></div>
+      <div><dt>建立日期</dt><dd>2025-08-20</dd></div>
+      <div><dt>最近更新</dt><dd>2026-09-11</dd></div>
+      <div><dt>上手難度</dt><dd><span class="pips" role="img" aria-label="上手難度 1，滿分 3"><span class="pip on"></span><span class="pip"></span><span class="pip"></span></span>打開網頁或一行指令就能試</dd></div>
+      <div><dt>規則檔</dt><dd><span class="marks"><span class="mark on">AGENTS.md<span class="visually-hidden">：有</span></span><span class="mark">CLAUDE.md<span class="visually-hidden">：沒有</span></span><span class="mark">SKILL.md<span class="visually-hidden">：沒有</span></span></span></dd></div>
+    </dl>
+    <p class="spec-note">數字來自 2026-11-06 的 GitHub 快照。標籤：開放格式、規則檔、跨工具</p>
+  </section>
+
+  <div class="entry-layout">
+    <nav class="toc" aria-label="本頁段落">
+      <ol><li><a href="#what">它是什麼</a></li><li><a href="#why-slot">為什麼放在「規則檔」這一格</a></li><li><a href="#problem">解決什麼問題</a></li><li><a href="#try">怎麼試</a></li><li><a href="#who">適合誰</a></li><li><a href="#caveats">注意事項</a></li><li><a href="#combos">搭配裝備</a></li><li><a href="#sources">資料來源</a></li></ol>
+    </nav>
+    <div class="entry-body">
+      <section class="sec sec--what" id="what">
+<h2>它是什麼</h2>
+<p>AGENTS.md 是一個開放格式，這個 repo 則是推廣它的官方網站原始碼。概念很簡單：在專案根目錄放一個叫 <code>AGENTS.md</code> 的 Markdown 檔，寫給 AI coding agent 看，內容是怎麼裝環境、怎麼跑測試、提交前要注意什麼。官方把它比喻成「給 agent 看的 README」：README 寫給人，AGENTS.md 寫給 agent。</p>
+</section>
+<section class="sec sec--why-slot" id="why-slot">
+<h2>為什麼放在「規則檔」這一格</h2>
+<p>這一格就是講義裡的「員工手冊」。AGENTS.md 不是程式，而是大家約定好的檔名和寫法，讓不同的 agent 都知道「進到這個專案，先讀哪一份」。它跟用哪顆大腦、哪套 harness 無關，所以放在「規則檔」。</p>
+</section>
+<section class="sec sec--problem" id="problem">
+<h2>解決什麼問題</h2>
+<p>以前每個 agent 都有自己的規則檔名稱，同一個專案要為不同工具各寫一份，內容還很容易不同步。AGENTS.md 讓大家共用同一份。GitHub 在 2026 年的 Octoverse 報告提到：今年新建的 repo 裡，有 agent 設定檔的平均 commit 數，是沒有的 8 倍。這不代表有手冊就一定做得好，但看得出越來越多專案把規則寫成檔案。</p>
+</section>
+<section class="sec sec--try" id="try">
+<h2>怎麼試</h2>
+<p>需求：一個專案資料夾，和任何一個支援 AGENTS.md 的 coding agent。</p>
+<ol><li>在專案根目錄新增 <code>AGENTS.md</code>，先寫三段就好：</li></ol>
+<pre class="code" data-lang="markdown"><code># AGENTS.md
+## 開發環境
+- 用什麼工具、怎麼安裝
+## 測試方式
+- 改完要跑哪些檢查
+## 提交前
+- 標題格式、哪些事不能做</code></pre>
+<ol start="2"><li>打開你的 agent，交辦一件小事，觀察它有沒有照手冊做。</li><li>用 Claude Code 的話：新版在專案裡沒有 CLAUDE.md 時會直接讀 AGENTS.md；如果同時有 CLAUDE.md，在裡面寫一行 <code>@AGENTS.md</code> 匯入，兩邊就只要維護一份。</li></ol>
+</section>
+<section class="sec sec--who" id="who">
+<h2>適合誰</h2>
+<ul><li>每一個想讓 AI 幫忙做專案的人，不論用哪個 agent。</li><li>正在寫這份作業的同學：本站就是用一份 AGENTS.md 長出來的，可以打開<a href="../../about/">這個網站怎麼長出來的</a>對照。</li><li>不適合：期待「寫了規則，agent 就一定照做」的人。規則檔是提醒，不是強制；要強制，還是得靠測試或檢查腳本。</li></ul>
+</section>
+<section class="sec sec--caveats" id="caveats">
+<h2>注意事項</h2>
+<ul><li>檔案放在 repo 根目錄，檔名是大寫的 <code>AGENTS.md</code>；子資料夾也可以有自己的一份。</li><li>寫太長反而會稀釋重點，只寫 agent 猜不到、又真的會影響結果的規則。</li><li>不要在規則檔裡放密碼或金鑰：它會被提交進 repo，也會被送進模型。</li><li>各家工具讀取的細節不一樣，例如 Claude Code 同時遇到 CLAUDE.md 時的行為，以各工具的官方文件為準。</li></ul>
+</section>
+<section class="sec sec--combos" id="combos">
+<h2>搭配裝備</h2>
+<ul><li><a class="wikilink" href="../magpie/"><svg class="mini" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-brain"></use></svg>magpie</a>：大腦可以換，規則檔還是同一份。</li><li><a class="wikilink" href="../aihot/"><svg class="mini" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-schedule"></use></svg>AIHOT</a>：AIHOT 的 README 建議把整個 repo 交給 agent，請它先讀 AGENTS.md 再改成你自己領域的版本，是規則檔實際派上用場的例子。</li><li><a class="wikilink" href="../anatomy/"><svg class="mini" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-skill"></use></svg>Anatomy</a>：技能教「怎麼做一件事」，規則檔講「這個專案的規矩」，兩者常一起出現。</li></ul>
+</section>
+<section class="sec sec--sources" id="sources">
+<h2>資料來源</h2>
+<ul><li><a href="https://github.com/agentsmd/agents.md" class="ext" rel="noopener">agentsmd/agents.md</a></li><li><a href="https://agents.md" class="ext" rel="noopener">AGENTS.md 官方網站</a></li><li><a href="https://code.claude.com/docs/en/memory" class="ext" rel="noopener">Claude Code 文件：How Claude remembers your project</a></li><li><a href="https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/" class="ext" rel="noopener">GitHub Octoverse 2026</a></li><li>查閱日期：2026-11-06</li></ul>
+</section>
+    </div>
+  </div>
+
+  <nav class="pager" aria-label="上一件、下一件">
+    <a class="prev" href="../magpie/"><small>上一件</small><strong>magpie</strong></a><a class="next" href="../anatomy/"><small>下一件</small><strong>Anatomy</strong></a>
+  </nav>
+</article>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <p class="footer-title">Harness 圖鑑</p>
+      <p>收錄 GitHub 上正熱門的 AI Agent 開源專案，照「AI Agent ＝ Model ＋ Harness」分成 8 個裝備欄位，一個專案一頁說明書。</p>
+    </div>
+    <div>
+      <p>數據快照：2026-11-06。星數每天都在變，以 GitHub 上的為準。</p>
+      <p>每一頁都由 <a href="../../about/">AGENTS.md 規則</a>產生。</p>
+    </div>
+    <div>
+      <p>TAICA 生成式 AI：文字與圖像生成的原理與實務・第九週作業</p>
+      <p><a class="ext" rel="noopener" href="https://github.com/otis222/harness-dex">原始碼與 AGENTS.md</a></p>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepSeek Harness｜Harness 圖鑑</title>
+<meta name="description" content="DeepSeek 開源的 agent 程式，整套功能都由外掛組成。">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700;800&family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body class="page-entry">
+<!-- 這個檔案由 tools/build.py 產生，請勿手改。內容改 notes/ 或 pages/，版型改 templates/，再執行 python tools/build.py -->
+<svg class="sprite" aria-hidden="true" focusable="false"><defs><mask id="m-brain" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><circle cx="22" cy="23" r="11"/><circle cx="32" cy="17" r="11"/><circle cx="42" cy="23" r="11"/><circle cx="18" cy="36" r="11"/><circle cx="46" cy="36" r="11"/><circle cx="26" cy="46" r="10"/><circle cx="38" cy="46" r="10"/><circle cx="32" cy="32" r="14"/></g><g fill="none" stroke="#000" stroke-width="2.6" stroke-linecap="round"><path d="M32 7c-2 7 2 12 0 19s2 13 0 20-1 7 0 10"/><path d="M13 25c4-3 8 2 12-1"/><path d="M11 38c4-3 9 2 14-1"/><path d="M19 49c3-3 6 1 9-2"/><path d="M21 13c3 3-1 6 3 9"/><path d="M51 25c-4-3-8 2-12-1"/><path d="M53 38c-4-3-9 2-14-1"/><path d="M45 49c-3-3-6 1-9-2"/><path d="M43 13c-3 3 1 6-3 9"/></g></mask><mask id="m-harness" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><path fill="#fff" d="M20 5h7l5 17 5-17h7l3 9c1 6 4 10 9 12v32a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V26c5-2 8-6 9-12z"/><g fill="#000"><rect x="31" y="22" width="2" height="40"/><rect x="6" y="37" width="52" height="4"/><rect x="6" y="47" width="52" height="4"/></g></mask><mask id="m-workspace" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect x="11" y="10" width="42" height="31" rx="3" fill="#fff"/><rect x="15" y="14" width="34" height="23" rx="1" fill="#000"/><path d="M20 21l5 4-5 4" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="28" y="28" width="9" height="2.8" rx="1.4" fill="#fff"/><path d="M5 45h54l-3 7a2 2 0 0 1-2 1.5H10A2 2 0 0 1 8 52z" fill="#fff"/><rect x="27" y="45" width="10" height="2" fill="#000"/></mask><mask id="m-tool" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g transform="rotate(-45 32 32)"><g fill="#fff"><rect x="12" y="28.5" width="40" height="7" rx="3.5"/><circle cx="11" cy="32" r="9.5"/><circle cx="53" cy="32" r="8"/></g><g fill="#000"><rect x="-1" y="28.2" width="13.5" height="7.6"/><circle cx="53" cy="32" r="4"/></g></g></mask><mask id="m-connector" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><rect x="23" y="6" width="5" height="16" rx="1.5"/><rect x="36" y="6" width="5" height="16" rx="1.5"/><rect x="16" y="19" width="32" height="23" rx="5"/><path d="M27 41h10v5a5 5 0 0 1-10 0z"/></g><path d="M32 49c0 8 10 6 18 11" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><rect x="21" y="27" width="22" height="3" rx="1.5" fill="#000"/></mask><mask id="m-skill" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><rect x="16" y="11" width="32" height="42"/><rect x="10" y="6" width="44" height="10" rx="5"/><rect x="10" y="48" width="44" height="10" rx="5"/></g><g fill="#000"><rect x="16" y="15.5" width="32" height="1.6"/><rect x="16" y="46.9" width="32" height="1.6"/><rect x="21" y="22" width="22" height="2.8" rx="1.4"/><rect x="21" y="28" width="17" height="2.8" rx="1.4"/><rect x="21" y="34" width="22" height="2.8" rx="1.4"/><rect x="21" y="40" width="12" height="2.8" rx="1.4"/></g></mask><mask id="m-rules" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect x="13" y="5" width="38" height="50" rx="3" fill="#fff"/><path d="M40 52v10l4-3.2 4 3.2V52z" fill="#fff"/><rect x="18" y="5" width="2.6" height="50" fill="#000"/><path d="M31 20l-3 21M39 20l-3 21M26 27h17M25 34h17" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/></mask><mask id="m-schedule" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><g fill="#fff"><circle cx="14" cy="14" r="7"/><circle cx="50" cy="14" r="7"/><rect x="29" y="8" width="6" height="7" rx="1.5"/><circle cx="32" cy="35" r="21"/></g><circle cx="32" cy="35" r="16" fill="#000"/><g fill="none" stroke="#fff" stroke-linecap="round"><path d="M32 35V24M32 35l8 5" stroke-width="3.2"/><path d="M18 51l-5 8M46 51l5 8" stroke-width="4.5"/></g><circle cx="32" cy="35" r="2.6" fill="#fff"/></mask></defs><symbol id="icon-brain" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-brain)"/></symbol><symbol id="icon-harness" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-harness)"/></symbol><symbol id="icon-workspace" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-workspace)"/></symbol><symbol id="icon-tool" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-tool)"/></symbol><symbol id="icon-connector" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-connector)"/></symbol><symbol id="icon-skill" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-skill)"/></symbol><symbol id="icon-rules" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-rules)"/></symbol><symbol id="icon-schedule" viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor" mask="url(#m-schedule)"/></symbol></svg>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <a class="brand" href="../../">
+    <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-harness"></use></svg>
+    <span>Harness 圖鑑</span>
+  </a>
+  <nav class="site-nav" aria-label="主要">
+    <a href="../../#manifest">裝備清單</a>
+    <a href="../../#rule-files">規則檔觀察</a>
+    <a href="../../about/">這個網站怎麼長出來的</a>
+    <a class="ext" rel="noopener" href="https://github.com/otis222/harness-dex">GitHub</a>
+  </nav>
+</header>
+<main id="main">
+<article class="entry">
+  <nav class="crumbs" aria-label="目前位置">
+    <a href="../../#manifest">裝備清單</a>
+    <span aria-hidden="true">／</span>
+    <a href="../../#slot-harness">整套 Harness</a>
+  </nav>
+
+  <header class="entry-head">
+    <div class="plate" aria-hidden="true">
+      <svg class="silhouette" viewBox="0 0 64 64"><use href="#icon-harness"></use></svg>
+      <span class="tape">整套 Harness</span>
+    </div>
+    <div class="entry-title">
+      <h1>DeepSeek Harness</h1>
+      <p class="motto"><span class="motto-label">官方標語</span>「Everything is a Plugin.」</p>
+      <p class="lede">DeepSeek 開源的 agent 程式，整套功能都由外掛組成。</p>
+      <p class="entry-links"><a class="ext" rel="noopener" href="https://github.com/deepseek-ai/deepseek-harness">GitHub repo</a><a class="ext" rel="noopener" href="https://deepseek.com/harness">官方網站</a><a class="ext" rel="noopener" href="https://deepseek-harness.github.io/deepseek-harness/">官方文件</a></p>
+    </div>
+  </header>
+
+  <section class="spec" aria-label="規格">
+    <dl class="spec-grid">
+      <div class="spec-stars">
+        <dt>星數</dt>
+        <dd><span class="big">27.4 萬</span><span class="gauge" title="對數刻度：1 千～30 萬"><span style="width:98.4%"></span></span></dd>
+      </div>
+      <div><dt>Fork</dt><dd>3.3 萬</dd></div>
+      <div><dt>主要語言</dt><dd>TypeScript</dd></div>
+      <div><dt>授權</dt><dd>MIT</dd></div>
+      <div><dt>建立日期</dt><dd>2026-08-13</dd></div>
+      <div><dt>最近更新</dt><dd>2026-11-04</dd></div>
+      <div><dt>上手難度</dt><dd><span class="pips" role="img" aria-label="上手難度 2，滿分 3"><span class="pip on"></span><span class="pip on"></span><span class="pip"></span></span>要先裝軟體，或準備金鑰、帳號</dd></div>
+      <div><dt>規則檔</dt><dd><span class="marks"><span class="mark on">AGENTS.md<span class="visually-hidden">：有</span></span><span class="mark on">CLAUDE.md<span class="visually-hidden">：有</span></span><span class="mark">SKILL.md<span class="visually-hidden">：沒有</span></span></span></dd></div>
+    </dl>
+    <p class="spec-note">數字來自 2026-11-06 的 GitHub 快照。標籤：外掛架構、Web UI、開發者預覽</p>
+  </section>
+
+  <div class="entry-layout">
+    <nav class="toc" aria-label="本頁段落">
+      <ol><li><a href="#what">它是什麼</a></li><li><a href="#why-slot">為什麼放在「整套 Harness」這一格</a></li><li><a href="#problem">解決什麼問題</a></li><li><a href="#try">怎麼試</a></li><li><a href="#who">適合誰</a></li><li><a href="#caveats">注意事項</a></li><li><a href="#combos">搭配裝備</a></li><li><a href="#sources">資料來源</a></li></ol>
+    </nav>
+    <div class="entry-body">
+      <section class="sec sec--what" id="what">
+<h2>它是什麼</h2>
+<p>DeepSeek Harness（指令名稱 <code>dsh</code>）是 DeepSeek 開源的 agent 程式。它的設計原則是「一切皆外掛」：底層用 Cordis 這套框架，把每一項功能都做成可以替換、組合的外掛。啟動後會開一個網頁介面，選好工作資料夾就能交辦任務，agent 會自己讀寫檔案、執行指令、擬定計畫。</p>
+</section>
+<section class="sec sec--why-slot" id="why-slot">
+<h2>為什麼放在「整套 Harness」這一格</h2>
+<p>講義的公式是 AI Agent ＝ AI Model ＋ Harness。DSH 就是公式右邊的那一整套：接下任務、呼叫工具、遇到需要核准的動作先停下來問你，再把結果交回模型判斷下一步。模型則是另外接上的，例如在設定裡填 DeepSeek 的 API key。它不是單一工具、也不是單一技能，而是一個拿來就能上工的完整 agent，所以放在「整套 Harness」。</p>
+</section>
+<section class="sec sec--problem" id="problem">
+<h2>解決什麼問題</h2>
+<p>上個單元用 AISuite 自己寫 agent 時，迴圈、工具、錯誤處理都要自己來。DSH 把這些包好了；又因為功能都是外掛，想加新能力時裝一個外掛就好，不用改核心程式。社群已經做出桌面版、外掛清單等周邊專案。舉例：拿到一個陌生的程式專案，選好資料夾後請它「摘要這個 repo，找出主要的套件」，它會自己去翻檔案再回報。</p>
+</section>
+<section class="sec sec--try" id="try">
+<h2>怎麼試</h2>
+<p>需求：Node.js，以及一組模型的 API key（官方文件以 DeepSeek 為例，也支援其他 OpenAI 相容服務）。</p>
+<ol><li>在想讓它工作的資料夾開終端機，執行：</li></ol>
+<pre class="code" data-lang="sh"><code>npx @deepseek-ai/dsh web</code></pre>
+<ol start="2"><li>瀏覽器會自動打開網頁介面，預設網址是 <code>http://127.0.0.1:3080</code>。</li><li>到 <strong>Settings → Models</strong> 填入 API key 並儲存。</li><li>按 <strong>Choose workspace</strong> 選擇工作資料夾，開一個 session，先試一句「幫我摘要這個資料夾的內容」。</li></ol>
+<blockquote><p>先開一個空的練習資料夾來試，不要一開始就讓它碰重要的檔案。</p></blockquote>
+</section>
+<section class="sec sec--who" id="who">
+<h2>適合誰</h2>
+<ul><li>想看「整套 harness」實際長什麼樣、拆開來研究的人。</li><li>手上有 DeepSeek 或其他 OpenAI 相容服務的 API key，想要一個會自己動手的 agent。</li><li>會寫 TypeScript、想做外掛的人：官方有獨立的外掛開發文件。</li><li>不適合：需要穩定、不想遇到改版就壞掉的正式工作環境。</li></ul>
+</section>
+<section class="sec sec--caveats" id="caveats">
+<h2>注意事項</h2>
+<ul><li>官方標明這是開發者預覽版，之後的更新可能出現不相容的變動。</li><li>官方的安全說明寫得很直白：它會執行模型產生的程式碼和指令、載入第三方外掛，可能改到或刪掉檔案、外流資料；沙盒和確認提示只能降低風險，不能保證隔離。建議用虛擬機或容器、只給最小權限、先備份。</li><li>第三方外掛等於把程式碼交給別人執行，安裝前先看過來源。</li><li>模型的 API 用量會計費，跑長任務前先確認額度。</li></ul>
+</section>
+<section class="sec sec--combos" id="combos">
+<h2>搭配裝備</h2>
+<ul><li><a class="wikilink" href="../magpie/"><svg class="mini" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-brain"></use></svg>magpie</a>：想替 agent 換不同的大腦時參考。magpie 示範了「同一套 harness、換不同模型」的做法，它支援哪些 agent 以官方清單為準。</li><li><a class="wikilink" href="../agents-md/"><svg class="mini" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-rules"></use></svg>AGENTS.md</a>：DSH 自己的 repo 根目錄就放了 AGENTS.md，可以從這裡看 agent 進到專案時會先讀什麼。</li><li><a class="wikilink" href="../openbot/"><svg class="mini" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-workspace"></use></svg>OpenBot</a>：同樣是讓 agent 動手，OpenBot 的重點是替每個 agent 準備獨立的工作空間和行為紀錄，可以對照兩者分工。</li></ul>
+</section>
+<section class="sec sec--sources" id="sources">
+<h2>資料來源</h2>
+<ul><li><a href="https://github.com/deepseek-ai/deepseek-harness" class="ext" rel="noopener">deepseek-ai/deepseek-harness</a></li><li><a href="https://deepseek-harness.github.io/deepseek-harness/" class="ext" rel="noopener">官方文件</a></li><li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/master/SAFETY.md" class="ext" rel="noopener">安全說明 SAFETY.md</a></li><li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/guide/index.md" class="ext" rel="noopener">Web UI 使用說明</a></li><li><a href="https://github.com/topics/dsh-plugin" class="ext" rel="noopener">GitHub 主題：dsh-plugin</a></li><li>查閱日期：2026-11-06</li></ul>
+</section>
+    </div>
+  </div>
+
+  <nav class="pager" aria-label="上一件、下一件">
+    <a class="next" href="../github-mcp-server/"><small>下一件</small><strong>GitHub MCP Server</strong></a>
+  </nav>
+</article>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <p class="footer-title">Harness 圖鑑</p>
+      <p>收錄 GitHub 上正熱門的 AI Agent 開源專案，照「AI Agent ＝ Model ＋ Harness」分成 8 個裝備欄位，一個專案一頁說明書。</p>
+    </div>
+    <div>
+      <p>數據快照：2026-11-06。星數每天都在變，以 GitHub 上的為準。</p>
+      <p>每一頁都由 <a href="../../about/">AGENTS.md 規則</a>產生。</p>
+    </div>
+    <div>
+      <p>TAICA 生成式 AI：文字與圖像生成的原理與實務・第九週作業</p>
+      <p><a class="ext" rel="noopener" href="https://github.com/otis222/harness-dex">原始碼與 AGENTS.md</a></p>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/site.js" defer></script>
+</body>
+</html>

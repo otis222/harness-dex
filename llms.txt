@@ -1,0 +1,43 @@
+# Harness 圖鑑
+
+> 收錄 GitHub 上正熱門的 AI Agent 開源專案，照「AI Agent ＝ Model ＋ Harness」分成 8 個裝備欄位，一個專案一頁說明書。
+
+每個專案一頁，固定 8 段：它是什麼、為什麼放在這一格、解決什麼問題、怎麼試、適合誰、注意事項、搭配裝備、資料來源。網站規則寫在 repo 的 AGENTS.md。
+
+## 大腦
+
+- [magpie](https://otis222.github.io/harness-dex/entries/magpie/): 一個本機閘道，替 Claude Code、Codex 等 agent 統一切換模型。
+
+## 整套 Harness
+
+- [DeepSeek Harness](https://otis222.github.io/harness-dex/entries/deepseek-harness/): DeepSeek 開源的 agent 程式，整套功能都由外掛組成。
+
+## 工作環境
+
+- [OpenBot](https://otis222.github.io/harness-dex/entries/openbot/): 可以架在自己機器上的 AI 同事範本，每個 agent 都有自己的瀏覽器和檔案。
+
+## 工具
+
+- [anydoc](https://otis222.github.io/harness-dex/entries/anydoc/): 把 Word、PowerPoint、Excel、PDF 等文件轉成乾淨 Markdown 的工具。
+- [Moli](https://otis222.github.io/harness-dex/entries/moli/): 專為 AI agent 做的無頭瀏覽器，平常只處理網頁結構，需要時才排版、繪製畫面。
+
+## 連接器
+
+- [GitHub MCP Server](https://otis222.github.io/harness-dex/entries/github-mcp-server/): GitHub 官方的 MCP 伺服器，讓 agent 讀 repo、管理 issue 和 PR。
+
+## 技能
+
+- [Anatomy](https://otis222.github.io/harness-dex/entries/anatomy/): 一個 agent 技能：把抽象概念畫成會動的等角機械圖解。
+
+## 規則檔
+
+- [AGENTS.md](https://otis222.github.io/harness-dex/entries/agents-md/): 一個開放格式：在專案裡放一份給 coding agent 讀的說明書。
+
+## 排程
+
+- [AIHOT](https://otis222.github.io/harness-dex/entries/aihot/): 每天定時找熱點、自己寫日報的網站框架，可以改成任何領域的版本。
+
+## 關於本站
+
+- [這個網站怎麼長出來的](https://otis222.github.io/harness-dex/about/): 規則、資料流程與健檢方式
+- [原始碼與 AGENTS.md](https://github.com/otis222/harness-dex)
