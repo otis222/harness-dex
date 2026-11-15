@@ -2,11 +2,12 @@
 
 > 做到哪、下一步、待收錄。每次收工都更新；會變成長期規則的事，改寫進 AGENTS.md 並記 log.md。
 
-最後更新：2026-11-06
+最後更新：2026-11-15
+
+線上網址：https://otis222.github.io/harness-dex/（repo：https://github.com/otis222/harness-dex）
 
 ## 下一步
 
-- [ ] 確認 GitHub Pages 上線：https://otis222.github.io/harness-dex/ 每一頁都打得開（repo：https://github.com/otis222/harness-dex）。
 - [ ] 第一次「更新數據」：一週後（2026-11-13 前後）。
 
 ## 目前收錄（9 件）
@@ -45,3 +46,5 @@
 
 - 2026-11-06：`check.py` 0 個錯誤；警告：`data/site.json` 的網址還沒填（等上傳 GitHub）。
 - 2026-11-06：實測——另開一個全新的 AI，只給「收錄 https://github.com/lexmount/moli」，照手冊做完、check 0 個錯誤。內容對照 README 審過後收進網站；它回報的 10 處不清楚已補進 AGENTS.md（見 log.md）。
+- 2026-11-06：GitHub Pages 上線，線上 24 個檔案和本機 build 逐一比對一致。
+- 2026-11-15：照第 10 週助教課的分段建議，AGENTS.md 補「頁面結構」；`check.py` 0 個錯誤、0 個警告。
